@@ -1,0 +1,297 @@
+/* ==================================================
+   About Page CSS
+   Author: Mosharraf Hossen
+   Scope: about.html only
+================================================== */
+
+
+/* ------------------------------
+   Base & Layout
+-------------------------------- */
+
+.about-page {
+  background-color: var(--background-color);
+  color: var(--default-color);
+  font-family: var(--default-font);
+}
+
+.section {
+  padding: 80px 0;
+  scroll-margin-top: 100px;
+}
+
+
+/* ------------------------------
+   Header & Navigation
+-------------------------------- */
+
+.header {
+  padding: 15px 0;
+  transition: all 0.4s ease;
+  z-index: 997;
+}
+
+.header .logo h1 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navmenu a {
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navmenu a.active {
+  color: var(--accent-color);
+}
+
+
+/* ------------------------------
+   Page Title & Breadcrumbs
+-------------------------------- */
+
+.page-title {
+  background-color: var(--background-color);
+}
+
+.page-title .heading {
+  padding: 160px 0 90px;
+}
+
+.page-title h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.page-title p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.breadcrumbs {
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+
+/* ------------------------------
+   Section Titles
+-------------------------------- */
+
+.section-title {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.section-title div {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+/* ------------------------------
+   About Section
+-------------------------------- */
+
+.about img {
+  border-radius: 12px;
+}
+
+.about .content h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about .content p {
+  line-height: 1.8;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  color: var(--accent-color);
+  margin-right: 8px;
+}
+
+
+/* ------------------------------
+   Stats Section
+-------------------------------- */
+
+.stats i {
+  width: 54px;
+  height: 54px;
+  background-color: var(--surface-color);
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.stats .stats-item {
+  background-color: var(--surface-color);
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.stats .stats-item span {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.stats .stats-item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* ------------------------------
+   Skills Section
+-------------------------------- */
+
+.skills .progress {
+  margin-bottom: 22px;
+}
+
+.skills .skill {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.skills .progress-bar-wrap {
+  height: 10px;
+  background-color: var(--surface-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skills .progress-bar {
+  height: 10px;
+  background-color: var(--accent-color);
+}
+
+
+/* ------------------------------
+   Interests / Features Section
+-------------------------------- */
+
+.interests .features-item {
+  background-color: var(--surface-color);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.interests .features-item:hover {
+  transform: translateY(-5px);
+}
+
+.interests .features-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+
+/* ------------------------------
+   Testimonials Section
+-------------------------------- */
+
+.testimonials .testimonial-item {
+  background-color: var(--surface-color);
+  padding: 25px;
+  border-radius: 12px;
+  min-height: 320px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+
+/* ------------------------------
+   Footer
+-------------------------------- */
+
+.footer {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.footer p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.footer .social-links a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ------------------------------
+   Scroll Top & Preloader
+-------------------------------- */
+
+.scroll-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 9999;
+}
+
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+}
